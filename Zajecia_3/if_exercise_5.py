@@ -5,12 +5,14 @@ def get_password():
 def check_password(password):
     if len(password) < 8:
         print("Password to short!")
-    elif password.islower() == True:
-        print("Brakuje duzej litery")
+    elif password.islower() == True or password.isupper() == True:
+        print("Co to za byki")
     elif password.isalpha() == True:
         print("Brakuje cyfry")
     elif password.isdecimal() == True:
         print("Ale gdzie litery?!")
+    elif password.isalnum() == False:
+        print("Gdzie te znaki?")
     else:
         print("Git majonez!")
 
