@@ -5,4 +5,12 @@ def get_numbers():
     return a, b, c
 
 def sort_numbers(a, b, c):
-    if
+    if a > b and a > c:
+        print(a)
+    if b > a and b > c:
+        print(b)
+    if c > a and c > b:
+        print(c)
+
+(a, b, c) = get_numbers()
+sort_numbers(a, b, c)
