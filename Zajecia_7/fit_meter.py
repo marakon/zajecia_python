@@ -7,6 +7,5 @@ def main():
     print(your_bmi)
     your_check = bmi.check(your_bmi)
     print('Your BMI is at {0} point, {1}'.format(your_bmi, your_check))
-    pass
 
 main()

@@ -4,8 +4,7 @@ def users_data():
     return mass, height
 
 def counter(mass, height):
-    bmi = round(mass / (height**2), 2)
-    return bmi
+    return round(mass / (height**2), 2)
 
 def check(bmi):
     if bmi < 18.5:
