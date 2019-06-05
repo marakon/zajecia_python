@@ -8,14 +8,15 @@ def counter(mass, height):
 
 def check(bmi):
     if bmi < 18.5:
-        with open('niedowaga.txt') as niedo:
-            return niedo.read()
+        open_file('niedowaga.txt')
     elif bmi > 25:
-        with open('nadwaga.txt') as nad:
-            return nad.read()
+        open_file('nadwaga.txt')
     else:
-        with open('norma.txt') as norma:
-            return norma.read()
+        open_file('norma.txt')
+
+def open_file(file):
+    with open(file) as f:
+        return f.read()
 
 def main():
     pass
