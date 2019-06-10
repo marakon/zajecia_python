@@ -8,4 +8,8 @@ def wypisz(n):
     print(n % 10)
 
 
-wypisz(123)
+wypisz(1234)
+
+#1 wypisz -> 123 -> 3
+#2 wypisz -> 12 -> 2
+#3 wypisz -> 1 -> 1
